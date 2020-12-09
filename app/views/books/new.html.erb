@@ -29,6 +29,16 @@
       </div>
     </div>
 
+            <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :カテゴリー, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'idジャンル'%>
+      </div>
+    </div>
+
+
         <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
         <%= f.label :著者, class: 'chat-room-form__label'%>
@@ -43,7 +53,7 @@
         <%= f.label :出版社, class: 'chat-room-form__label'%>
       </div>
       <div class='chat-room-form__field--right'>
-        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'idその他いれる'%>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: '任意'%>
       </div>
     </div>
 
