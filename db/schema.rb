@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 2020_12_09_073949) do
   end
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "impressions", null: false
+    t.integer "lank_id", null: false
+    t.integer "category_id", null: false
+    t.string "author", null: false
+    t.string "syuppan", null: false
+    t.integer "read_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

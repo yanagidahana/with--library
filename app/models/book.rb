@@ -8,10 +8,10 @@ class Book < ApplicationRecord
   belongs_to_active_hash :category
 
   #空の投稿を保存できないようにする
-  validates :title, :impressions, :lank_id, :category_id, :author, :read_id presence: true
+  validates :title, :impressions, :author, presence: true
 
 #ジャンルの選択が「--」の時は保存できないようにする
-validates :lank_id, :category_id, :read_id numericality
+  #validates :lank_id, :category_id, :read_id numericality
 
  # def change
   #  create_table :books do |t|

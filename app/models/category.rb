@@ -28,6 +28,7 @@ class Read < ApplicationRecord
     {id: 25, name: '雑誌'},
     {id: 26, name: '楽譜・スコア・音楽書'},
     {id: 27, name: 'アダルト'},
+    {id: 28, name: 'その他'},
     ]
 
 end

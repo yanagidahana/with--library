@@ -12,6 +12,7 @@ class Syuppan < ApplicationRecord
     {id: 9, name: 'ファミレス'},
     {id: 10, name: 'ビジネスホテル'},
     {id: 11, name: '職場'},
+    {id: 12, name: 'その他'},
     ]
 
 end
