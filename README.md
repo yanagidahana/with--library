@@ -1,24 +1,89 @@
-# README
+ # with-library 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 概要
+スマホを片手に本をアウトプットするアプリ。効率よく本を読むことができ、勉強率、仕事率UP!
+アウトプットした内容は後から見返すことができ何処でも勉強可能！
+他人のオススメの本もランキングと感想付きで探すことができます。リンク先から気になった本を買うことも可能！
+また、お近くの本を読めるスペースも検索可能です。
 
-Things you may want to cover:
 
-* Ruby version
+# 制作背景(意図)
+私が本を読む時に１番時間をかけていることはアウトプットをすることです。
+いつも読みながら大切なところに蛍光ペンで色をつけ後から見返してメモ等にまとめていました。
+必要な時に見つけられなかったり、ペンがなければまとめずらかったり
+何処か不便さを感じていました。
+そんな気持ちから少しでも効率よく本を読むことが出来て知識を増やせるようになれば良いという気持ちから作成しました。
 
-* System dependencies
+# 工夫したポイント
+とにかく簡単にアウトプット出来るようにしました。
+また、それぞれの本は「どういう内容なのか」「学べることは何か」がすぐに見返せるようにしたことです。
 
-* Configuration
 
-* Database creation
+# 課題や今後実装したい機能
+近くの本を読める空間をGoogleマップのAPIを導入して検索出来るようにしたい。
+いつでも何処でも最高の空間で本が読めるようにする。
 
-* Database initialization
 
-* How to run the test suite
+ 
+# DB設計
+=======
 
-* Services (job queues, cache servers, search engines, etc.)
+## users table
+| Column             | Type           | Options                |
+|--------------------|----------------|------------------------|
+| nickname           | string         |  null: false           |
+| email              | string         |  null: false,unique: true |
+| encrypted_password | string         |  null: false           |
 
-* Deployment instructions
 
-* ...
+
+### Association
+* has_many :books
+* has_many :records
+
+# librarys テーブル
+| Column             | Type           | Options                |
+|--------------------|----------------|------------------------|
+| bookname           | string         |  null: false           |
+
+### Association
+* has_many :library_users
+* has_many :users
+* has_many :outputs
+* has_many :books
+
+
+
+## outputs テーブル
+| Column             | Type           |
+|--------------------|----------------|
+| autput             | text           |
+
+
+### Association
+* has_many :users
+* has_many :outputs
+* has_many :books
+
+
+
+
+## books table
+| Column                  | Type       | Options                              |
+|----------------------   |------------|------------------                    |
+| title                   | string     | null: false                          |
+| impressions             | text       | null: false                          |
+| category_id             | integer    | null: false                          |
+| lank_id                 | text       | null: false                          |
+| author                  | string     | null: false                          |
+| syuppan_id              | integer    | null: false                          |
+| read                    | string     | null: false                          |
+| user                    | references | null: false                          |
+
+
+### Association
+* has_many :librarys
+* has_many :outputs
+- belongs_to :user
+
+
