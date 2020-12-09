@@ -13,11 +13,53 @@
     </div>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
-        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>チャットメンバー</label>
+        <%= f.label :本の解説, class: 'chat-room-form__label'%>
       </div>
       <div class='chat-room-form__field--right'>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'アウトプットした内容を文章化して下さい'%>
       </div>
     </div>
+
+        <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :評価, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'id評価'%>
+      </div>
+    </div>
+
+        <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :著者, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'かく'%>
+      </div>
+    </div>
+
+        <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :出版社, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'idその他いれる'%>
+      </div>
+    </div>
+
+        <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :読んだ場所, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'カフェいえ会社id'%>
+      </div>
+    </div>
+
+
+
+
+
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'></div>
       <div class='chat-room-form__field--right'>
