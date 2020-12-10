@@ -35,42 +35,15 @@
 | email              | string         |  null: false,unique: true |
 | encrypted_password | string         |  null: false           |
 
-
-
 ### Association
-* has_many :books
-* has_many :records
+* has_many :librarys
+* has_many :outputs
+
+
 
 # librarys テーブル
 | Column             | Type           | Options                |
 |--------------------|----------------|------------------------|
-| bookname           | string         |  null: false           |
-
-### Association
-* has_many :library_users
-* has_many :users
-* has_many :outputs
-* has_many :books
-
-
-
-## outputs テーブル
-| Column             | Type           |
-|--------------------|----------------|
-| autput             | text           |
-
-
-### Association
-* has_many :users
-* has_many :outputs
-* has_many :books
-
-
-
-
-## books table
-| Column                  | Type       | Options                              |
-|----------------------   |------------|------------------                    |
 | title                   | string     | null: false                          |
 | impressions             | text       | null: false                          |
 | category_id             | integer    | null: false                          |
@@ -80,10 +53,22 @@
 | read                    | string     | null: false                          |
 | user                    | references | null: false                          |
 
+### Association
+* belongs_to :user
+* has_many   :outputs
+
+
+
+## outputs テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| content | string     |                                |
+| user    | references | null: false, foreign_key: true |
+| library | references | null: false, foreign_key: true |
 
 ### Association
-* has_many :librarys
-* has_many :outputs
+- belongs_to :library
 - belongs_to :user
 
 
