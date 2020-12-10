@@ -11,8 +11,8 @@ class Book < ApplicationRecord
   validates :title, :impressions, :author, presence: true
 
 #ジャンルの選択が「--」の時は保存できないようにする
-  #validates :lank_id, :category_id, :read_id numericality
-
+    validates :category_id, :lank_id, :read_id, numericality: { other_than: 0,} 
+    
  # def change
   #  create_table :books do |t|
    #   t.string :name, null: false
