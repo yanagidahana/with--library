@@ -1,6 +1,6 @@
-class CreateBooks < ActiveRecord::Migration[6.0]
+class CreateLibraries < ActiveRecord::Migration[6.0]
   def change
-    create_table :books do |t|
+    create_table :libraries do |t|
       t.string   :title,          null: false
       t.text     :impressions,    null: false
       t.integer  :lank_id,        null: false
@@ -12,3 +12,4 @@ class CreateBooks < ActiveRecord::Migration[6.0]
     end
   end
 end
+

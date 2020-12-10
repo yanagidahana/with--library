@@ -6,6 +6,6 @@ class User < ApplicationRecord
 
   validates :name, presence: true
 
-  has_many :book_users
-  has_many :books, through: :book_users
+  has_many :libraries
+  has_many :outputs
 end
