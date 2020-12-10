@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: "outputs#index"
   resources :users, only: [:edit, :update]
   resources :libraries, only: [:new, :create]
+  
 end
