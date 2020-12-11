@@ -21,7 +21,7 @@ class LibrariesController < ApplicationController
   private
 
   def library_params
-    params.require(:library).permit(:title, :impressions, :category_id, :lank_id, :author, :syuppan_id, :read)
+    params.require(:library).permit(:title, :impressions, :category_id, :lank_id, :author, :syuppan, :read_id)
   end
 end
 
