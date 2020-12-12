@@ -2,20 +2,19 @@
   <div class="header-name">
   <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
-  <div class="create-room">
-    <a href="#">My Book</a>
+  <div class="create-library">
+    <%= link_to "チャットを作成する", new_library_path %>
   </div>
 </div>
 
-<div class="rooms">
- <div class="room">
-    <div class="room-name">
-      <a href="#">本の名前１</a>
+<div class="libraries">
+  <% current_user.libraries.each do |library| %>
+   <div class="library">
+    <div class="library-name">
+     <%= link_to library.name, library_outputs_path(library) %>
+     </div>
     </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">本の名前２</a>
-    </div>
-  </div>
+  <% end %>  
 </div>
+
+
