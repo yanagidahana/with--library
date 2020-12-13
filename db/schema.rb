@@ -36,13 +36,16 @@ ActiveRecord::Schema.define(version: 2020_12_10_090000) do
   create_table "libraries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
     t.text "impressions", null: false
-    t.integer "lank_id", null: false
     t.integer "category_id", null: false
+    t.text "lank_id", null: false
     t.string "author", null: false
-    t.string "syuppan", null: false
-    t.integer "read_id", null: false
+    t.integer "syuppan", null: false
+    t.string "read_id", null: false
+    t.string "outputs", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_libraries_on_user_id"
   end
 
   create_table "outputs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -64,12 +67,11 @@ ActiveRecord::Schema.define(version: 2020_12_10_090000) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "book_users", "books"
   add_foreign_key "book_users", "users"
+  add_foreign_key "libraries", "users"
   add_foreign_key "outputs", "libraries"
   add_foreign_key "outputs", "users"
 end
