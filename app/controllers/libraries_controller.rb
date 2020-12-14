@@ -24,4 +24,3 @@ class LibrariesController < ApplicationController
     params.require(:library).permit(:title, :impressions, :category_id, :lank_id, :author, :syuppan, :read_id)
   end
 end
-
