@@ -8,7 +8,6 @@ class CreateLibraries < ActiveRecord::Migration[6.0]
       t.string       :author,     null: false
       t.integer      :syuppan,    null: false
       t.string       :read_id,    null: false
-      t.string       :outputs,    null: false
       t.references   :user,       foreign_key: true  
       t.timestamps
     end

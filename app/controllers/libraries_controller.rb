@@ -9,6 +9,7 @@ class LibrariesController < ApplicationController
 
   def create
     @library= Library.new(library_params)
+    @library.user_id = current_user.id
     if @library.save
       redirect_to root_path
     else

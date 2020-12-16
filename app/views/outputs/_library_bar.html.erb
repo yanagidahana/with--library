@@ -11,7 +11,7 @@
   <% current_user.libraries.each do |library| %>
    <div class="library">
     <div class="library-name">
-     <%= link_to library.name, library_outputs_path(library) %>
+     <%= link_to library.title, library_outputs_path(library) %>
      </div>
     </div>
   <% end %>  
