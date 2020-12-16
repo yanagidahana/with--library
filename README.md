@@ -49,8 +49,8 @@
 | category_id             | integer    | null: false                          |
 | lank_id                 | text       | null: false                          |
 | author                  | string     | null: false                          |
-| syuppan_id              | integer    | null: false                          |
-| read                    | string     | null: false                          |
+| syuppan                 | integer    | null: false                          |
+| read_id                 | string     | null: false                          |
 | user                    | references | null: false                          |
 
 ### Association
