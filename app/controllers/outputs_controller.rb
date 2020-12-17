@@ -2,6 +2,7 @@ class OutputsController < ApplicationController
   def index
     @output = Output.new
     @library = Library.find(params[:library_id])
+    @outputs = @library.outputs.includes(:user)
   end
 
   def create
@@ -10,6 +11,7 @@ class OutputsController < ApplicationController
     if @output.save
       redirect_to library_outputs_path(@library)
     else
+      @outputs = @library.outputs.includes(:user)
       render :index
     end
   end

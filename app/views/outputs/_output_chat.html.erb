@@ -12,37 +12,7 @@
 </div>
 
 <div class="outputs">
-  <div class="output">
-    <div class="upper-output">
-      <div class="output-user">
-        han
-      </div>
-      <div class="output-date">
-        2020/3/31(水) 12:43:30
-      </div>
-    </div>
-    <div class="lower-output">
-      <div class="output-content">
-        内容１
-      </div>
-    </div>
-  </div>
-
-  <div class="output">
-    <div class="upper-output">
-      <div class="output-user">
-        han
-      </div>
-      <div class="output-date">
-        2020/3/31(水) 12:47:30
-      </div>
-    </div>
-    <div class="lower-output">
-      <div class="output-content">
-        内容２
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'output', collection: @outputs %>
 </div>
 
 <%= form_with model: [@library, @output], class: 'form', local: true do |f| %>
