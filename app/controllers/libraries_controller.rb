@@ -17,6 +17,11 @@ class LibrariesController < ApplicationController
     end  
   end
 
+  def destroy
+    @library = Library.find(params[:id])
+    library.destroy
+    redirect_to root_path
+  end
 
 
   private
