@@ -21,8 +21,6 @@ development:
   <<: *default
   database: with__library_development
   username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -53,5 +51,6 @@ test:
 production:
   <<: *default
   database: with__library_production
-  username: with__library
-  password: <%= ENV['WITH__LIBRARY_DATABASE_PASSWORD'] %>
+  sername: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
