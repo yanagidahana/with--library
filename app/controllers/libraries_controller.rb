@@ -3,6 +3,10 @@ class LibrariesController < ApplicationController
   def index
   end
 
+  def show
+    @library = Library.find(params[:id])
+  end
+
   def new
    @library = Library.new
   end
