@@ -1,7 +1,7 @@
 class OutputsController < ApplicationController
   def index
     @output = Output.new
-    @library = Library.find(params[:library_id])
+    @library = Library.find_by(id: params[:library_id]) || current_user.libraries.first 
     @outputs = @library.outputs.includes(:user)
   end
 

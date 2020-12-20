@@ -1,13 +1,13 @@
 <div class="chat-header">
   <div class="left-header">
     <div class="header-title">
-      <%= @library.title %>
+      <%= link_to @library.title, library_path(@library) %>
     </div>
   </div>
   <div class="right-header">
-    <div class="header-button">
+    <%# <div class="header-button">
       <a href="#">アウトプット終了</a>
-    </div>
+    </div> %>
   </div>
 </div>
 
