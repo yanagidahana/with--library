@@ -17,8 +17,6 @@ class LibrariesController < ApplicationController
     end  
   end
 
-
-
   private
 
   def library_params
