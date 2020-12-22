@@ -19,6 +19,6 @@ class OutputsController < ApplicationController
   private
 
   def output_params
-    params.require(:output).permit(:content).merge(user_id: current_user.id)
+    params.require(:output).permit(:content, :image).merge(user_id: current_user.id)
   end
 end

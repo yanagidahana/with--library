@@ -1,4 +1,4 @@
-class Read < ApplicationRecord
+  class Read 
   self.data = [
     {id: 0, name: '--'},
     {id: 1, name: '文学・評論'},

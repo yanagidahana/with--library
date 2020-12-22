@@ -1,4 +1,4 @@
-class Lank < ApplicationRecord
+class Lank
   self.data = [
     { id: 0, name: '--' },
     { id: 1, name: '★' },
