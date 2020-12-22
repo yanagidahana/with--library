@@ -14,6 +14,7 @@
       <!-- 投稿したメッセージ内容を記述する -->
       <%= output.content %>
     </div>
-        <%= image_tag output.image.variant(resize: '500x500'), class: 'output-image' if output.image.attached? %>
+        <%# <%= image_tag output.image, variant(resize: '500x500'), class: 'output-image' if output.image.attached? %> %>
+            <%= image_tag output.image, class: 'output-image' if output.image.attached? %>
   </div>
 </div>
