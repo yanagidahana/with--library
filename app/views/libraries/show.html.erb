@@ -1,21 +1,19 @@
-  <%= @library.title %>
-
   <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>書籍情報ページ</title>
 </head>
 <body>
-  <table border="1">
-    <caption>キャプション</caption>
-    <tr>
-      <td>データ１</td>
-      <td>データ２</td>
-      <td>データ３</td>
-    </tr>
-  </table>
+  <h1>書籍情報ページ</h1>
+    <p><%= @library.title %></p>
+    <p><%= @library.impressions %></p>
+    <p><%= @library.category_id %></p>
+    <p><%= @library.lank_id %></p>
+    <p><%= @library.author %></p>
+    <p><%= @library.syuppan%></p>
+    <p><%= @library.author %></p>
+    <p><%= @library.read_id %></p>
 </body>
 </html>
-<%= @library.title %>
