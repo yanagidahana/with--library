@@ -1,3 +1,4 @@
+  <% if @library %>
 <div class="chat-header">
   <div class="left-header">
     <div class="header-title">
@@ -24,4 +25,5 @@
     </label>
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
+<% end %>
 <% end %>
