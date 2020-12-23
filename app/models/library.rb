@@ -3,4 +3,7 @@ class Library < ApplicationRecord
   has_many   :outputs, dependent: :destroy  
 
   validates :title, :impressions, :author, :syuppan, presence: true
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :syuppan, :lank, :read
 end
