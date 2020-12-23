@@ -7,4 +7,8 @@ class Lank < ApplicationRecord
     { id: 4, name: '★ ★ ★ ★' },
     { id: 5, name: '★ ★ ★ ★ ★' },
   ]
+
+  include ActiveHash::Associations
+  has_many :library
+
 end

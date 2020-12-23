@@ -1,4 +1,4 @@
-class Read < ApplicationRecord
+class Category < ApplicationRecord
   self.data = [
     {id: 0, name: '--'},
     {id: 1, name: '文学・評論'},
@@ -31,6 +31,9 @@ class Read < ApplicationRecord
     {id: 28, name: 'その他'},
     ]
 
-    include ActiveHash::Associations
-    has_many :library
+
+  include ActiveHash::Associations
+  has_many :library
+
 end
+
