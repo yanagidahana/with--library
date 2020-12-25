@@ -26,9 +26,9 @@
 
 # DEMO
 書籍登録フォーマット
-file:///Users/yanagidahana/Desktop/%E6%9B%B8%E7%B1%8D%E7%99%BB%E9%8C%B2%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0.png
+https://i.gyazo.com/499165716e3e0abb037903a0944254b6.png
 アウトプットフォーマット
-file:///Users/yanagidahana/Desktop/%E3%82%A2%E3%82%A6%E3%83%88%E3%83%95%E3%82%9A%E3%83%83%E3%83%88%E7%94%BB%E9%9D%A2.png
+https://i.gyazo.com/454770d50aabe88ce27fa85e9306ad7c.png
 
 
 
