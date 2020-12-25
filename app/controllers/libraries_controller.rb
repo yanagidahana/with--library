@@ -1,6 +1,7 @@
 class LibrariesController < ApplicationController
 
   def index
+    @library = Library.order("created_at DESC")
   end
 
   def show

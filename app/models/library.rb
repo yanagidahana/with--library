@@ -8,5 +8,5 @@ class Library < ApplicationRecord
   validates :title, :impressions, :author, :syuppan, presence: true
 
   #ジャンルの選択が「--」の時は保存できないようにする
-  validates :category_id, :lank_id, :read, numericality: { other_than: 0 } 
+  validates :category_id, :lank_id, :read_id, numericality: { other_than: 0 } 
 end
