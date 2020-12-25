@@ -25,7 +25,10 @@
 そんな気持ちから少しでも効率よく本を読むことが出来て知識を増やせるようになれば良いという気持ちから作成しました。
 
 # DEMO
-
+書籍登録フォーマット
+file:///Users/yanagidahana/Desktop/%E6%9B%B8%E7%B1%8D%E7%99%BB%E9%8C%B2%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0.png
+アウトプットフォーマット
+file:///Users/yanagidahana/Desktop/%E3%82%A2%E3%82%A6%E3%83%88%E3%83%95%E3%82%9A%E3%83%83%E3%83%88%E7%94%BB%E9%9D%A2.png
 
 
 
