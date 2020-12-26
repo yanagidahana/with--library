@@ -1,27 +1,99 @@
+.library-top {
+  max-width: 940px;
+  margin: 13%;
+}
+
+.library-2 {
+  border-top: 3px solid #8c6239;
+}
+
+html {
+  font-size: 100%;
+}
+
 .title-name {
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 47%  
+
 }
 
 .output-name {
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 47%  
+
 }
 
 .category_id-name {
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 47%  
+
 }
 
 .lank_id-name {
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 47%  
+
 }
 
 .author-name {
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 47%  
 }
 
 .syuppan-name {
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 47%  
+
 }
 
 .read_id-name {
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 47%  
+
+}
+
+
+
+.title {
+  font-size: 20px;
+  padding-left: 40%  
+
+}
+
+.output {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding-left: 40%  
+}
+
+.category_id {
+  font-size: 20px;
+  padding-left: 50%  
+
+}
+
+.lank_id {
+  font-size: 20px;
+  padding-left: 50%  
+
+}
+
+.author {
+  font-size: 20px;
+  padding-left: 45%  
+
+}
+
+.syuppan {
+  font-size: 20px;
+  padding-left: 50%  
+
+}
+
+.read_id {
+  font-size: 20px;
+  padding-left: 50%  
+
 }

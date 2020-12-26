@@ -5,39 +5,43 @@
   <title></title>
 </head>
 <body>
+
+<div class="library-top">
+
   <h1>書籍情報ページ</h1>
 
+<div class="library-2">
+
   <dt><label class="title-name">書籍名</label></dt>
-    <%= @library.title %>
+    <p class="title"><%= @library.title %>
 
 <br></br>
 
-
   <dt><label class="output-name">アウトプット</label></dt>
-    <p><%=  @library.impressions %></p>
+    <p class="output"><%=  @library.impressions %></p>
 
 <br></br>
   <dt><label class="category_id-name">カテゴリー</label></dt>
-    <p><%= @library.category_id %></p>
+    <p class="category_id"><%= @library.category_id %></p>
 
 <br></br>
   <dt><label class="lank_id-name">ランク</label></dt>
-    <p><%= @library.lank_id %></p>
+    <p class="lank_id"><%= @library.lank_id %></p>
 
 <br></br>
   <dt><label class="author-name">著者</label></dt>
-    <p><%= @library.author %></p>
+    <p class="author"><%= @library.author %></p>
 
 <br></br>
   <dt><label class="syuppan-name">出版社</label></dt>
-    <p><%= @library.syuppan%></p>
+    <p class="syuppan"><%= @library.syuppan%></p>
 
 <br></br>
 
   <dt><label class="read_id-name">読んだ場所</label></dt>
-    <p><%= @library.read_id %></p>
+    <p class="read_id"><%= @library.read_id %></p>
 
-
+</div>
 </body>
 </html>
 
