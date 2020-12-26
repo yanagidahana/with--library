@@ -2,18 +2,46 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>書籍情報ページ</title>
+  <title></title>
 </head>
 <body>
   <h1>書籍情報ページ</h1>
-    <p><%= @library.title %></p>
-    <p><%= @library.impressions %></p>
+
+  <dt><label class="title-name">書籍名</label></dt>
+    <%= @library.title %>
+
+<br></br>
+
+
+  <dt><label class="output-name">アウトプット</label></dt>
+    <p><%=  @library.impressions %></p>
+
+<br></br>
+  <dt><label class="category_id-name">カテゴリー</label></dt>
     <p><%= @library.category_id %></p>
+
+<br></br>
+  <dt><label class="lank_id-name">ランク</label></dt>
     <p><%= @library.lank_id %></p>
+
+<br></br>
+  <dt><label class="author-name">著者</label></dt>
     <p><%= @library.author %></p>
+
+<br></br>
+  <dt><label class="syuppan-name">出版社</label></dt>
     <p><%= @library.syuppan%></p>
-    <p><%= @library.author %></p>
+
+<br></br>
+
+  <dt><label class="read_id-name">読んだ場所</label></dt>
     <p><%= @library.read_id %></p>
+
+
 </body>
 </html>
+
+
+      <%# <div class='chat-library-form__field--2'>
+        <%= f.text_field :category_id, class: 'chat__library_name chat-library-form__input', placeholder: 'カテゴリーを選択して下さい'%>
+      </div> 

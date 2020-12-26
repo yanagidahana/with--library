@@ -48,10 +48,10 @@
 | title                   | string     | null: false                          |
 | impressions             | text       | null: false                          |
 | category_id             | integer    | null: false                          |
-| lank_id                 | text       | null: false                          |
+| lank_id                  | text       | null: false                          |
 | author                  | string     | null: false                          |
 | syuppan                 | integer    | null: false                          |
-| read_id                 | string     | null: false                          |
+| read_id                  | string     | null: false                          |
 | user                    | references | null: false                          |
 
 ### Association

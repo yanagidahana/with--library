@@ -24,9 +24,8 @@ li {
 }
 
 .chat-library-form {
-  width: 980px;
-  margin: 60px auto;
-  padding: 40px;
+  margin: 0px auto;
+  padding: 20px;
   background-color:#669999;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -160,3 +159,10 @@ select {
 .field_with_errors {
   display: contents;
 }
+
+
+
+
+
+
+/* showアクション */
