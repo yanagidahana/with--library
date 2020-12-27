@@ -26,9 +26,9 @@
 
 # DEMO
 書籍登録フォーマット
-https://i.gyazo.com/499165716e3e0abb037903a0944254b6.png
+
 アウトプットフォーマット
-https://i.gyazo.com/454770d50aabe88ce27fa85e9306ad7c.png
+
 
 
 
