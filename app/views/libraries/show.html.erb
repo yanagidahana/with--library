@@ -1,56 +1,52 @@
-  <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/web_font.css">
-  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
-</head>
+<!DOCTYPE html>
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/web_font.css">
+      <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    </head>
 
 
-<body>
-<div class="wf-hannari">
-<div class="library-all">
-  <h1>書籍情報ページ</h1>
- </div> 
-  
-  <p class="library-2">
+  <body>
+      <div class="wf-hannari">
+      <span class="top1">
+        <h1>書籍情報ページ</h1>
+      </span>
+        <table class="detail-table">
+      <tbody>
+      <tr>
+        <th class="title-table">書籍名</th>
+        <td class="title1"><%= @library.title %></td>
+      </tr>
+      <tr>
+        <th class="title-table">アウトプット</th>
+        <td class="title1"><%=  @library.impressions %></td>
+      </tr>
+      <tr>
+        <th class="title-table">カテゴリー</th>
+        <td class="title1"><%= @library.category_id %></td>
+      </tr>
+      <tr>
+        <th class="title-table">ランク</th>
+        <td class="title1"><%= @library.lank_id %></td>
+      </tr>
+      <tr>
+        <th class="title-table">著者</th>
+          <td class="title1"><%= @library.author %></td>
+      </tr>
+      <tr>
+        <th class="title-table">出版社</th>
+        <td class="title1"><%= @library.syuppan%></td>
+      </tr>
+      <tr>
+        <th class="title-table">読んだ場所</th>
+        <td class="title1"><%= @library.read_id %></td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
 
-
-      <dt><label class="title-name">書籍名</label></dt>
-        <p class="title1"><%= @library.title %>
-
-    <br></br>
-
-      <dt><label class="output-name">アウトプット</label></dt>
-        <p class="output1"><%=  @library.impressions %></p>
-
-    <br></br>
-      <dt><label class="category_id-name">カテゴリー</label></dt>
-        <p class="category_id1"><%= @library.category_id %></p>
-
-    <br></br>
-      <dt><label class="lank_id-name">ランク</label></dt>
-        <p class="lank_id1"><%= @library.lank_id %></p>
-
-    <br></br>
-      <dt><label class="author-name">著者</label></dt>
-        <p class="author1"><%= @library.author %></p>
-
-    <br></br>
-      <dt><label class="syuppan-name">出版社</label></dt>
-        <p class="syuppan1"><%= @library.syuppan%></p>
-
-    <br></br>
-
-      <dt><label class="read_id-name">読んだ場所</label></dt>
-        <p class="read_id1"><%= @library.read_id %></p>
-
-  </p>
-   
-   <%= link_to "アウトプット画面に戻る", root_path %>
-
-</div>
-</body>
-
-</html>
+    
+    <%= link_to "アウトプット画面に戻る", root_path %>
+      </div>
+  </body>
 
