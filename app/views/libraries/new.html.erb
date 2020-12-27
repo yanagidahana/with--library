@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/web_font.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="wf-hannari">
+
 <div class='chat-library-form'>
   <h1>書籍登録フォーム</h1>
   <%=form_with model: @library, local: true do |f|%>
@@ -13,7 +23,7 @@
       <div class='chat-library-form__field--left'>
         <%= f.label :アウトプット, class: 'chat-library-form__label'%>
       </div>
-      <div class='chat-library-form__field--right'>
+      <div class='chat-library-form__field--1'>
         <%= f.text_field :impressions, class: 'chat__library_name chat-library-form__input', placeholder: 'アウトプットをまとめて文章化して下さい'%>
       </div>
     </div>
@@ -22,7 +32,7 @@
       <div class='chat-library-form__field--left'>
         <%= f.label :カテゴリー, class: 'chat-library-form__label'%>
       </div>
-      <div class='chat-library-form__field--right'>
+      <div class='chat-library-form__field--2'>
         <%= f.text_field :category_id, class: 'chat__library_name chat-library-form__input', placeholder: 'カテゴリーを選択して下さい'%>
       </div>
     </div>
@@ -31,7 +41,7 @@
       <div class='chat-library-form__field--left'>
         <%= f.label :ランク, class: 'chat-library-form__label'%>
       </div>
-      <div class='chat-library-form__field--right'>
+      <div class='chat-library-form__field--3'>
         <%= f.text_field :lank_id, class: 'chat__library_name chat-library-form__input', placeholder: 'ランクを選択して下さい'%>
       </div>
     </div>
@@ -40,7 +50,7 @@
       <div class='chat-library-form__field--left'>
         <%= f.label :著者, class: 'chat-library-form__label'%>
       </div>
-      <div class='chat-library-form__field--right'>
+      <div class='chat-library-form__field--4'>
         <%= f.text_field :author, class: 'chat__library_name chat-library-form__input', placeholder: '著者を入力してください'%>
       </div>
     </div>
@@ -50,7 +60,7 @@
       <div class='chat-library-form__field--left'>
         <%= f.label :出版社, class: 'chat-library-form__label'%>
       </div>
-      <div class='chat-library-form__field--right'>
+      <div class='chat-library-form__field--5'>
         <%= f.text_field :syuppan, class: 'chat__library_name chat-library-form__input', placeholder: '出版社を入力して下さい'%>
       </div>
     </div>
@@ -59,18 +69,19 @@
       <div class='chat-library-form__field--left'>
         <%= f.label :読んだ場所, class: 'chat-library-form__label'%>
       </div>
-      <div class='chat-library-form__field--right'>
+      <div class='chat-library-form__field--6'>
         <%= f.text_field :read_id, class: 'chat__library_name chat-library-form__input', placeholder: '読んだ場所を選択して下さい'%>
       </div>
     </div>
 
     <div class='chat-library-form__field'>
       <div class='chat-library-form__field--left'></div>
-      <div class='chat-library-form__field--right'>
-        <%= f.submit class: 'chat-library-form__action-btn'%>
+      <div class='chat-library-form__field--'>
+        <%= f.submit :アウトプットする,class: 'chat-library-form__action-btn'%>
       </div>
     </div>
   <% end %>
 </div>
-
+</div>
+</body>
 

@@ -1,21 +1,52 @@
-  <%= @library.title %>
+<!DOCTYPE html>
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/web_font.css">
+      <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    </head>
 
-  <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-</head>
-<body>
-  <table border="1">
-    <caption>キャプション</caption>
-    <tr>
-      <td>データ１</td>
-      <td>データ２</td>
-      <td>データ３</td>
-    </tr>
-  </table>
-</body>
-</html>
-<%= @library.title %>
+
+  <body>
+      <div class="wf-hannari">
+      <span class="top1">
+        <h1>書籍情報ページ</h1>
+      </span>
+        <table class="detail-table">
+      <tbody>
+      <tr>
+        <th class="title-table">書籍名</th>
+        <td class="title1"><%= @library.title %></td>
+      </tr>
+      <tr>
+        <th class="title-table">アウトプット</th>
+        <td class="title1"><%=  @library.impressions %></td>
+      </tr>
+      <tr>
+        <th class="title-table">カテゴリー</th>
+        <td class="title1"><%= @library.category_id %></td>
+      </tr>
+      <tr>
+        <th class="title-table">ランク</th>
+        <td class="title1"><%= @library.lank_id %></td>
+      </tr>
+      <tr>
+        <th class="title-table">著者</th>
+          <td class="title1"><%= @library.author %></td>
+      </tr>
+      <tr>
+        <th class="title-table">出版社</th>
+        <td class="title1"><%= @library.syuppan%></td>
+      </tr>
+      <tr>
+        <th class="title-table">読んだ場所</th>
+        <td class="title1"><%= @library.read_id %></td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+
+    
+    <%= link_to "アウトプット画面に戻る", root_path %>
+      </div>
+  </body>
+

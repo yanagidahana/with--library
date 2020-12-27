@@ -1,6 +1,9 @@
-.wrapper {
+.wf-hannari { font-family: "Hannari"; }
+
+.wf-hannari {
   display: flex;
 }
+
 .library-bar {
   background-color: #996666;
   width: 300px;

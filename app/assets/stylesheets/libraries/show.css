@@ -1,0 +1,37 @@
+.wf-hannari { font-family: "Hannari"; }
+
+.top1 {
+  font-size: 18px;
+  margin: 10%;
+
+}
+
+html {
+  font-size: 100%;
+  padding: 2vh;
+  display:flex;
+}
+
+
+.title-table {
+  width: 20%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.title1 {
+  width: 70%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  margin-top: 15%;
+
+}
+
+.detail-table {
+  margin-bottom: 30px;
+  width: 100%;
+}

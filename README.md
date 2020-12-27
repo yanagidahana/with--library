@@ -24,13 +24,6 @@
 何処か不便さを感じていました。
 そんな気持ちから少しでも効率よく本を読むことが出来て知識を増やせるようになれば良いという気持ちから作成しました。
 
-# DEMO
-書籍登録フォーマット
-
-アウトプットフォーマット
-
-
-
 
 # 工夫したポイント
 いつでもどこでもスマホ１台で簡単にアウトプットを出来るようにしました。
@@ -64,10 +57,10 @@
 | title                   | string     | null: false                          |
 | impressions             | text       | null: false                          |
 | category_id             | integer    | null: false                          |
-| lank_id                 | text       | null: false                          |
+| lank_id                  | text       | null: false                          |
 | author                  | string     | null: false                          |
 | syuppan                 | integer    | null: false                          |
-| read_id                 | string     | null: false                          |
+| read_id                  | string     | null: false                          |
 | user                    | references | null: false                          |
 
 ### Association

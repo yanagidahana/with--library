@@ -1,3 +1,5 @@
+.wf-hannari { font-family: "Hannari"; }
+
 h1 {
   letter-spacing: 2px;
   font-size: 24px;
@@ -24,9 +26,8 @@ li {
 }
 
 .chat-library-form {
-  width: 980px;
-  margin: 60px auto;
-  padding: 40px;
+  margin: 0px auto;
+  padding: 20px;
   background-color:#669999;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -79,6 +80,40 @@ li {
   width: 70%;
 }
 
+.chat-library-form__field--1 {
+  float: right;
+  width: 70%;
+}
+
+.chat-library-form__field--2 {
+  float: right;
+  width: 70%;
+}
+
+.chat-library-form__field--3 {
+  float: right;
+  width: 70%;
+}
+
+.chat-library-form__field--4 {
+  float: right;
+  width: 70%;
+}
+
+.chat-library-form__field--5 {
+  float: right;
+  width: 70%;
+}
+
+.chat-library-form__field--6 {
+  float: right;
+  width: 70%;
+}
+
+.chat-library-form__field--7 {
+  float: right;
+  width: 70%;
+}
 .chat-library-user {
   padding: 0 15px;
   line-height: 50px;
@@ -126,3 +161,5 @@ select {
 .field_with_errors {
   display: contents;
 }
+
+
