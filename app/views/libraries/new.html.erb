@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/web_font.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="wf-hannari">
+
 <div class='chat-library-form'>
   <h1>書籍登録フォーム</h1>
   <%=form_with model: @library, local: true do |f|%>
@@ -67,10 +77,11 @@
     <div class='chat-library-form__field'>
       <div class='chat-library-form__field--left'></div>
       <div class='chat-library-form__field--'>
-        <%= f.submit class: 'chat-library-form__action-btn'%>
+        <%= f.submit :アウトプットする,class: 'chat-library-form__action-btn'%>
       </div>
     </div>
   <% end %>
 </div>
-
+</div>
+</body>
 

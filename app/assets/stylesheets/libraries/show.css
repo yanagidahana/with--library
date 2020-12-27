@@ -1,3 +1,5 @@
+.wf-hannari { font-family: "Hannari"; }
+
 .library-all {
   max-width: 940px;
   margin: 13%;
@@ -54,13 +56,13 @@ html {
 
 
 
-.title {
+.title1 {
   font-size: 20px;
   padding-left: 40%  
 
 }
 
-.output {
+.output1 {
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -68,31 +70,31 @@ html {
   padding-left: 40%  
 }
 
-.category_id {
+.category_id1 {
   font-size: 20px;
   padding-left: 50%  
 
 }
 
-.lank_id {
+.lank_id1 {
   font-size: 20px;
   padding-left: 50%  
 
 }
 
-.author {
+.author1 {
   font-size: 20px;
   padding-left: 45%  
 
 }
 
-.syuppan {
+.syuppan1 {
   font-size: 20px;
   padding-left: 50%  
 
 }
 
-.read_id {
+.read_id1 {
   font-size: 20px;
   padding-left: 50%  
 
