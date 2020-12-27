@@ -1,10 +1,10 @@
-.library-top {
+.library-all {
   max-width: 940px;
   margin: 13%;
+  border-bottom: 3px solid #8c6239;
 }
 
 .library-2 {
-  border-top: 3px solid #8c6239;
 }
 
 html {
@@ -97,3 +97,4 @@ html {
   padding-left: 50%  
 
 }
+
