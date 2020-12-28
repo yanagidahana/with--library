@@ -79,3 +79,5 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
 end
+
+gem 'jquery-rails', '~>4.4.0'
