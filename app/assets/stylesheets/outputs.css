@@ -142,7 +142,14 @@
   margin-left: 15px;
   padding: 0 20px;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 
+}
+
+.form-submit:hover {
+  background-color: black;
+  color: white;
 }
 
 .form-image {
