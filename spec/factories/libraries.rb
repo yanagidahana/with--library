@@ -7,7 +7,6 @@ FactoryBot.define do
     author {"著者"}
     syuppan {"文庫"}
     read_id {2}
-    association :user
   end
 end
 
