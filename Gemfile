@@ -83,5 +83,7 @@ end
 gem 'jquery-rails', '~>4.4.0'
 
 gem 'rspec-rails'
-  gem 'factory_bot_rails'
-  gem 'faker'
+gem 'factory_bot_rails'
+gem 'faker'
+
+  gem 'rails-i18n'
