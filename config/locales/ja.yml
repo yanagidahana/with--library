@@ -1,4 +1,16 @@
 ja:
+  activerecord:
+  attributes:
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
+    user:
+      name: 名前
+    library:
+      Title: 書籍名
+      Impressions: アウトプット
+      Author: 著者
+      Syuppan: 出版社
+      Category: カテゴリー
+      Lank: 評価
+      Read: 読んだ場所
