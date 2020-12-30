@@ -11,6 +11,7 @@
 <div class='chat-library-form'>
   <h1>書籍登録フォーム</h1>
   <%=form_with model: @library, local: true do |f|%>
+  <%= render 'layouts/error_messages', model: form.object %>
     <div class='chat-library-form__field'>
       <div class='chat-library-form__field--left'>
         <%= f.label :著書名, class: 'chat-library-form__label'%>
