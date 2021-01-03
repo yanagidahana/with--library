@@ -23,6 +23,7 @@ RSpec.describe User, type: :model do
     end
 
     it "encrypted_passwordが空では登録できないこと" do
+      @user.password = nil
       @user.valid?
       expect(@user.errors.full_messages).to include("Password can't be blank")
     end
